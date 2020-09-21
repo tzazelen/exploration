@@ -1,0 +1,442 @@
+body {
+  font-family: Open Sans, arial, sans-serif;
+  background: #fafafa;
+}
+.off-canvas-content {
+  background: #fafafa;
+  box-shadow: none;
+  z-index: 0;
+}
+.off-canvas-content .row {
+  margin-left: .9375rem;
+  margin-right: .9375rem;
+  max-width: 100%;
+}
+.tz {
+  width:100%;
+  position: fixed;
+  text-align: center;
+  font-size: 18pt;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: #ccc;
+  z-index: 100;
+}
+
+.callout.primary {
+  background: #fafafa;
+}
+.off-canvas {
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+.off-canvas .row {
+  padding-left: 1.5rem;
+}
+.off-canvas.position-left {
+  box-shadow: 3px 0 6px 0 rgba(35, 35, 35, 0.06);
+  z-index: 1;
+  width: 256px;
+}
+.callout {
+  border: none;
+  margin: 0;
+  padding: 1rem 0 .5rem;
+}
+.callout.primary {
+  padding-bottom: 1.5rem;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 3px 2px 6px 0 #ccc;
+  margin: 0 0 2rem 0;
+  padding: .5rem;
+}
+.card [type=text] {
+  border: none;
+  height: 1.5rem;
+  margin: auto;
+  box-shadow: none;
+}
+.card input::placeholder {
+  font-size: .85rem;
+  color: .333;
+}
+.card-fixed {
+  background-color: #fff;
+  height: 444px;
+  box-shadow: 3px 2px 6px 0 #ccc;
+  margin: 0 0 2rem 0;
+}
+.card-divider {
+  background-color: rgb(240,241,242);
+  padding: 10px 1rem 10px;
+  font-size: .8rem;
+  font-weight: 600;
+  position: relative;
+}
+.card-section {
+  padding: 0 .4rem 0;
+}
+.card-section.map {
+  padding: 16px;
+}
+.newCustomer {
+  margin: .5rem 0 0 -1rem;
+  font-size: .85rem;
+  font-weight: 600;
+}
+.newCustomer a {
+  color: rgb(45,129,202);
+}
+.download {
+  font-size: .85rem;
+  font-weight: 600;
+  float: right;
+}
+.download a {
+  color: #999;
+}
+.dropdown-arrow {
+  float:right;
+  padding-right: .5rem;
+}
+.thumbnail {
+  max-width: 55%;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.googleMap {
+  width: 100%;
+  height: 375px;
+  overflow: hidden;
+  margin: 0;
+  background:url('../../img/googleMap.png') no-repeat center;
+}
+h1 {
+  color: #232323;
+  font-size: 34px;
+  font-family: Open Sans,Arial,sans-serif;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0.31px;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  padding: 14px 0 16px;
+  text-decoration: none;
+  color: #232323;
+  font-size: 16px;
+  font-family: Open Sans,Arial,sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.44px;
+}
+/* nav li.active {
+
+} */
+nav li.active a, nav li.active:hover a {
+  color: #0D6CF2;
+  font-weight: 600;
+  border-left: solid 4px #0D6CF2;
+  margin: 0 -1rem 0 -1.5rem;
+  padding-left: 1.2rem;
+  padding-right: .2rem;
+  background-color: #F5F8FE;
+}
+nav li:hover, nav li:hover a  {
+  margin: 0 -1rem 0 -1.5rem;
+  background-color: #F5F8FE;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  color: #000;
+}
+nav li.active:hover {
+  padding-left: 1.5rem;
+}
+li:before {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 16px 18px 0 0;
+}
+li.dashboard:before {
+  content: "";
+  display: block;
+  background: url("../../img/dashboard.svg") no-repeat;
+}
+li.contracts:before {
+  content: "";
+  display: block;
+  background: url("../../img/contracts.svg") no-repeat;
+}
+li.customers:before {
+  content: "";
+  display: block;
+  background: url("../../img/customers.svg") no-repeat;
+}
+li.vehicles:before {
+  content: "";
+  display: block;
+  background: url("../../img/vehicles.svg") no-repeat;
+}
+li.vehicles:before {
+  content: "";
+  display: block;
+  background: url("../../img/vehicles.svg") no-repeat;
+}
+li.employees:before {
+  content: "";
+  display: block;
+  background: url("../../img/employees.svg") no-repeat;
+}
+li.reports:before {
+  content: "";
+  display: block;
+  background: url("../../img/reports.svg") no-repeat;
+}
+li.settings:before {
+  content: "";
+  display: block;
+  background: url("../../img/settings.svg") no-repeat;
+}
+.mapMarker {
+  float: right;
+  padding: 0 10px 0 0;
+}
+.inlineIcon {
+  padding: 0 .5rem 0 0;
+}
+.filterText {
+  color: #999;
+  font-size: .9rem;
+  font-weight: 600;
+}
+.cog {
+  float: right;
+  padding: 0 5px 0 0;
+  max-width: 25px;
+}
+.reports_submenu, .settings_submenu {
+  display: none;
+}
+nav .sub li a {
+  display: block;
+  margin: .2rem -1rem .2rem -1.5rem;
+  padding: .2rem 0 .5rem 2.6rem;
+  font-size: .9rem;
+}
+nav .sub li:hover a {
+  color: blue;
+  background-color: #fff;
+}
+.sub a.active {
+  margin: .2rem -1rem .2rem 0;
+  padding: .2rem 0 .5rem 2.6rem;
+  color: blue;
+  background-color: #fff;;
+}
+.card-fixed {
+  position: relative;
+}
+.card-section table th, .card-fixed .utilization-footer {
+  text-align: left;
+}
+.card-section table .right, .utilization-footer .right {
+  text-align: right;
+}
+.card-section table {
+  padding: 0;
+  font-size: .8rem;
+}
+.status-table, .kpi-table {
+  padding-top: 1rem;
+}
+.card-section table th {
+  padding: 0 .625rem 0;
+}
+.card-section table td {
+  padding: 2px .625rem 0;
+}
+.card-section tr:nth-child(even), .large-table tr:nth-child(even) {
+  background-color: #fff;
+}
+.card-section tbody {
+  border: none;
+  background-color: #fff;
+}
+.card-section .table-hr {
+  color: rgba(0,0,0,0.12);
+  margin: .2rem .8rem 0;
+}
+.card-fixed .utilization-footer {
+  background-color: #eee;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: .8rem;
+}
+.card-fixed .utilization-footer tbody {
+  background-color: #eee;
+}
+.card-fixed .utilization-footer table th {
+  padding: 1rem 1rem 0;
+}
+.card-section .kpi-table table th {
+  padding-bottom: 1rem;
+}
+.kpi-footer {
+  padding: 0 1rem 0 .625rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: .7rem;
+  color: #666;
+}
+.large-table table a {
+  text-decoration-line: underline;
+}
+.large-table table tr,
+.large-table table th,
+.large-table table td {
+  height: 2rem;
+  font-size: .8rem;
+  text-align: left;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+.large-table table th {
+  color: #333;
+  font-size: .7rem;
+  font-weight: 600;
+}
+.large-table table tr.total {
+  background-color: #E5F4FA;
+  font-weight: 600;
+}
+.large-table.customers table tbody,
+.large-table.customers table tr,
+.large-table.customers table th,
+.large-table.customers table td  {
+  border: none;
+}
+a.ttip::before {
+    content: attr(data-tip) ;
+    font-size: 10px;
+    position:absolute;
+    z-index: 999;
+    white-space:nowrap;
+    bottom:9999px;
+    left: 80%;
+    background:#000;
+    color:#e0e0e0;
+    padding:0px 7px;
+    line-height: 24px;
+    height: 24px;
+    opacity: 0;
+    transition:opacity 0.4s ease-out;
+    }
+a.ttip:hover::before {
+    opacity: 1;
+    top:-18px;
+    }
+.upperMenuContent {
+  position: relative;
+}
+/* .lowerMenuContent {
+  position: fixed;
+  bottom: 0;
+  margin: 0 0 1rem 0;
+} */
+.lowerMenuContent {
+  position: fixed;
+  bottom: 0;
+  margin: 0 0 1rem 0;
+}
+.lowerMenuContent p {
+  font-size: .9rem;
+}
+.launchIcon {
+  float: right;
+  opacity: .5;
+}
+.menuName {
+  margin:0 0 2px 0;
+  font-weight: 600;
+}
+/* css switch */
+.lbl {
+  position: relative;
+  display: block;
+  height: 12px;
+  width: 32px;
+  background: #999;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lbl:after {
+  position: absolute;
+  left: -2px;
+  top: -5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0px 3px 3px #999;
+  content: '';
+  transition: all 0.3s ease;
+}
+
+.lbl:active:after { transform: scale(1.15, 0.85); }
+
+.cbx:checked ~ label { background: rgba(45,129,202,0.5); }
+
+.cbx:checked ~ label:after {
+  left: 20px;
+  background: rgb(45,129,202);
+}
+
+.cbx:disabled ~ label {
+  background: #d5d5d5;
+  pointer-events: none;
+}
+
+.cbx:disabled ~ label:after { background: #bcbdbc; }
+.cbx.hidden {
+  display: none;
+}
+
+/* media queries */
+@media screen and (min-width: 64em) {
+.position-left.reveal-for-large~.off-canvas-content {
+  margin-left: 256px;
+}
+}
+
+@media screen and (max-width: 64em) {
+  .thumbnail {
+    max-width: 25%;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+  .title-bar {
+      background: #fff;
+    }
+  .menu-icon::after {
+    background-color: #999;
+  }
+}
